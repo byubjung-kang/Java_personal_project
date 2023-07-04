@@ -191,7 +191,7 @@ public class Game extends Thread {
 			int bpm = 50;
 			
 			beat = new Beat[] {
-					// + 5 이 8비트 
+					// + 14 = 16 beat 
 					new Beat(startTime + bpm * 6, "J"),
 					new Beat(startTime + bpm * 20, "S"),
 					new Beat(startTime + bpm * 30, "K"),
@@ -203,7 +203,7 @@ public class Game extends Thread {
 					new Beat(startTime + bpm * 77, "L"),
 					new Beat(startTime + bpm * 126, "A"),
 					new Beat(startTime + bpm * 126, "Space"),
-					new Beat(startTime + bpm * 126, "L"),//start
+					new Beat(startTime + bpm * 126, "L"),
 					new Beat(startTime + bpm * 135, "S"),
 					new Beat(startTime + bpm * 144, "K"),
 					new Beat(startTime + bpm * 158, "A"),
@@ -252,8 +252,25 @@ public class Game extends Thread {
 			};
 		}else if(titleName.equals("Invincible - Deaf Kev")&& difficulty.equals("Hard Mode")){
 			int startTime = 1000;
+			int bpm = 70;
 			beat = new Beat[] {
-					new Beat(startTime, "Space")
+					new Beat(startTime, "Space"),
+					new Beat(startTime + bpm * 6, "J"),
+					new Beat(startTime + bpm * 20, "Space"),
+					new Beat(startTime + bpm * 30, "K"),
+					new Beat(startTime + bpm * 51, "Space"),
+					new Beat(startTime + bpm * 55, "Space"),
+					new Beat(startTime + bpm * 59, "S"),
+					new Beat(startTime + bpm * 70, "D"),
+					new Beat(startTime + bpm * 73, "L"),
+					new Beat(startTime + bpm * 77, "L"),
+					new Beat(startTime + bpm * 126, "A"),
+					new Beat(startTime + bpm * 126, "Space"),
+					new Beat(startTime + bpm * 126, "L"),
+					new Beat(startTime + bpm * 135, "S"),
+					new Beat(startTime + bpm * 144, "K"),
+					new Beat(startTime + bpm * 158, "A"),
+					new Beat(startTime + bpm * 170, "L"),
 			};
 		}else if(titleName.equals("Blasters - Infraction")&& difficulty.equals("Easy Mode")){
 			int startTime = 1000;
